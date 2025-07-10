@@ -38,7 +38,7 @@ function registMember() {
         return;
     }
 
-    const pesan = `*REGISTRASI MEMBER BARU*\n\nNama Lengkap : ${nama}\nNomor Telepon : ${telp}\n\n_©2025 Starry Net_. All Rights Reserved.`;
+    const pesan = `*REGISTRASI MEMBER BARU*\n\nNama Lengkap : ${nama}\nNomor Telepon : ${telp}\n\n> _©2025 Starry Net_. All Rights Reserved.`;
     const noWa = '6285977370778';
     window.open(`https://wa.me/${noWa}?text=${encodeURIComponent(pesan)}`, '_blank');
 }
@@ -52,7 +52,7 @@ function voucherWa() {
         alert("Nama, Nomor Telepon, dan Paket wajib diisi!");
         return;
     }
-    const pesan = `*PEMBELIAN VOUCHER BARU*\n\nNama Lengkap : ${nama}\nNomor Telepon : ${telp}\nPaket : ${paket}\n\n_©2025 Starry Net_. All Rights Reserved.`;
+    const pesan = `*PEMBELIAN VOUCHER BARU*\n\nNama Lengkap : ${nama}\nNomor Telepon : ${telp}\nPaket : ${paket}\n\n> _©2025 Starry Net_. All Rights Reserved.`;
     const noWa = '6285977370778';
     window.open(`https://wa.me/${noWa}?text=${encodeURIComponent(pesan)}`, '_blank');
 }
