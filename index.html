@@ -1,0 +1,291 @@
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Starry Net</title>
+	<link rel="icon" href="img/favicon.png" type="image/png">	
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/ionicons.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="wrap">
+    <div style="background-color: #3c8dbc;" class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a style="color:white" class="navbar-brand" href="#"><i style="font-size:20px;color:orange" class="ion ion-ribbon-b"></i> Starry Net</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+					<li><a href="#paket" data-toggle="modal" data-target="#paket"><i class="ion ion-cash"></i> Paket</a></li>
+					<li><a href="#kontak" data-toggle="modal" data-target="#kontak"><i class="ion ion-android-call"></i> Kontak</a></li>
+					<li><a href="#tentang" data-toggle="modal" data-target="#tentang"><i class="ion ion-ios-information-outline"></i> Tentang</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">	
+        <div style="padding:0" class="col-md-12">
+            <div class="panel panel-default">
+                <div style="padding:0" class="panel-body">
+                    <div class="card hovercard">
+                        <div class="cardheader">
+							<img alt="" src="img/pa-logo-big.png">
+                        </div>
+                        <div class="avatar">
+							<img alt="" src="img/pa-logo.png">
+                        </div>
+						<div class="col-md-12 col-md-6 left">
+							<div id="alert" class="alert alert-info head" style="text-align:center;font-size:14px">Selamat Datang di Website Starry Net</div>
+								<div style="margin-top:15px;" class="btn-group btn-group-justified">
+									<div class="btn-group">
+										<button onclick="member()" type="button" style="width:50%" class="btn btn-info"><i class="ion ion-person-stalker"></i> MEMBER</button>
+										<button onclick="voucher()" type="button" style="width:50%" class="btn btn-warning"><i class="ion ion-card"></i> VOUCHER</button>
+									</div>
+								</div>								
+								<div style="margin-top:20px;" class="input-group margin-bottom-sm">
+									<span class="input-group-addon"><i class="ion ion-person"></i></span>
+									<input class="form-control" type="text" id="username" name="username" placeholder="Nama Lengkap" required>
+								</div>
+								<div style="margin-top:15px;" class="input-group margin-bottom-sm">
+									<span class="input-group-addon"><i class="ion ion-android-call"></i></span>
+									<input class="form-control" type="number" id="password" name="password" placeholder="Nomor Telepon" required>
+								</div>
+								<div style="margin-top:15px; display:none" id="inputPaket" class="input-group margin-bottom-sm">
+									<span class="input-group-addon"><i class="ion ion-ios-pricetag"></i></span>
+									<input class="form-control" type="text" id="paketText" placeholder="Paket Lite / Basic">
+								</div>
+								<hr style="margin-top:20px;margin-bottom:14px;border-color:#dddddd">
+								<div  id="member" style="margin-top:15px;" class="btn-group btn-group-justified mb15">
+									<div class="btn-group">
+									<button type="button" onclick="registMember()" class="btn btn-primary"><i class="ion ion-person-add"></i> REGISTRASI MEMBER</button>
+								</div>
+								</div> 
+								<div id="voucher" style="margin-top:15px;display:none" class="btn-group btn-group-justified mb15">
+									<div class="btn-group">
+								<button type="button" onclick="voucherWa()" class="btn btn-primary"><i class="ion ion-chatbox-working"></i> BELI VOUCHER</button>									
+							</div>
+								</div>								
+							</form>
+							<br>
+						</div>
+							<div class="info">
+								<div class="title">
+									<a href="https://starrynet.biz.id" title="Starry Net">Starry Net</a>
+								</div>
+								<div style="font-size:14px;color:#222222" class="desc">Alamat : Gg. Mushola At Taubah RT 003 RW 003 Desa Jebed Utara</div>
+								<div style="font-size:14px;color:#222222;padding-bottom:5px" class="desc">Kecamatan Taman - Kabupaten Pemalang - Jawa Tengah</div>								
+								<div style="font-size:14px;color:#222222;border-top:solid 1px #dddddd;padding-top:5px" class="desc">Mobile : 0859 7737 0778</div>
+								<div style="font-size:14px;color:#222222" class="desc">WhatsApp : 0859 7737 0778</div>
+							
+								<div style="font-size:14px;" class="desc"><span style="color:#222222">URL Hotspot :</span> <a href="http://login.starrynet.biz.id" title="Starry Net">http://login.starrynet.biz.id</a></div>
+							</div>
+						<div class="col-md-12 col-md-6">	
+							<div style="padding-top:20px;border-top:solid 1px #dddddd;text-align:left" class="row">							
+								<div class="col-md-12">
+									<div class="panel panel-default mb20 mini-box panel-hovered">
+										<div style="padding:0;background-color:#d9edf7;;color:#000000" class="panel-body">
+											<div class="clearfix">												
+												<div style="padding:10px;text-align:center">Layanan Internet Hotspot Murah Unlimited dengan berbagai macam pilihan paket internet dan harga yang bersahabat</div>
+											</div>
+										</div>
+										<div style="text-align:center" class="panel-footer clearfix panel-footer-sm panel-footer-primary">
+											<img alt="" src="img/facebook.png">
+											<img alt="" src="img/twitter.png">
+											<img alt="" src="img/youtube.png">
+											<img alt="" src="img/gmail.png">
+											<img alt="" src="img/yahoo.png">
+										</div>
+									</div>
+								</div>
+							
+							</div>						
+						</div>						
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<p style="text-align:center;color:#555" class="text-muted">&copy;2025 <a href="https://starrynet.biz.id" target="_blank" rel="noopener">Starry Net. </a>All Rights Reserved.</p>
+<br>	
+</div>
+<script type="text/javascript" src="js/form.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<div class="modal fade" id="paket" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+		<div style="width:90%;height:auto;margin-top:15px;background:transparent" class="modal-dialog" role="document">
+			<div style="background:transparent;box-shadow:none;border:none" class="modal-content">			
+				<div class="modal-body">
+					<section id="pricing-table">
+						<div class="container">
+							<div class="row">
+								<div class="pricing">
+									<div class="col-md-3 col-sm-12 col-xs-12">
+										<div class="pricing-table">
+											<div class="pricing-header">
+												<p class="pricing-title">Lite</p>
+												<p class="pricing-rate">Rp. 3.000</p>
+												<a href="#berlangganan" data-toggle="modal" data-target="#berlangganan" class="btn btn-custom" data-paket="LITE2M">Berlangganan</a>											
+											</div>
+											<div class="pricing-list">
+												<ul>
+													<li><i style="font-size:18px;color:#555555" class="ion ion-android-checkbox-outline"></i>Up To 2 Mbps</li>
+													<li><i style="font-size:18px;color:#555555" class="ion ion-alert-circled"></i>FUP 2 GB</li>
+													<li><i style="font-size:18px;color:#555555" class="ion ion-android-checkbox-outline"></i>Single Users</li>
+													<li><i style="font-size:18px;color:#555555" class="ion ion-android-checkbox-outline"></i>Free Support</li>
+													<li><i style="font-size:18px;color:#555555" class="ion ion-android-close"></i>Free modem rental</li>
+												</ul>
+											</div>
+										</div>
+									</div>									
+									<div class="col-md-3 col-sm-12 col-xs-12">
+										<div class="pricing-table">
+											<div class="pricing-header">
+												<p class="pricing-title">Basic</p>
+												<p class="pricing-rate">Rp. 20.000</p>
+											<a href="#berlangganan" data-toggle="modal" data-target="#berlangganan" class="btn btn-custom" data-paket="BASIC4M">Berlangganan</a>											</div>
+											<div class="pricing-list">
+												<ul>
+													<li><i style="font-size:18px;color:#555555" class="ion ion-android-checkbox-outline"></i>Up To 4 Mbps</li>
+													<li><i style="font-size:18px;color:#555555" class="ion ion-alert-circled"></i>FUP 20 GB</li>
+													<li><i style="font-size:18px;color:#555555" class="ion ion-android-checkbox-outline"></i>Multi Users</li>
+													<li><i style="font-size:18px;color:#555555" class="ion ion-android-checkbox-outline"></i>Free Support</li>
+													<li><i style="font-size:18px;color:#555555" class="ion ion-android-close"></i>Free modem rental</li>
+												</ul>
+											</div>
+										</div>
+									</div>			
+									<div class="col-md-3 col-sm-12 col-xs-12">
+										<div class="pricing-table">
+											<div class="pricing-header">
+												<p class="pricing-title">Home</p>
+												<p class="pricing-rate">Rp. 100.000</p>
+												<a href="#berlangganan" data-toggle="modal" data-target="#berlangganan" class="btn btn-custom" data-paket="HOME8M">Berlangganan</a>
+											</div>
+											<div class="pricing-list">
+												<ul>
+													<li><i style="font-size:18px;color:#555555" class="ion ion-android-checkbox-outline"></i>Up To 8 Mbps</li>
+													<li><i style="font-size:18px;color:#555555" class="ion ion-android-checkbox-outline"></i>Unlimited Data</li>
+													<li><i style="font-size:18px;color:#555555" class="ion ion-android-checkbox-outline"></i>Multi Users</li>
+													<li><i style="font-size:18px;color:#555555" class="ion ion-android-checkbox-outline"></i>Free Support</li>
+													<li><i style="font-size:18px;color:#555555" class="ion ion-android-checkbox-outline"></i>Free modem rental</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-sm-12 col-xs-12">
+										<div class="pricing-table">
+											<div class="pricing-header">
+												<p class="pricing-title">Pro</p>
+												<p class="pricing-rate">Rp. 150.000</p>
+												<a href="#berlangganan" data-toggle="modal" data-target="#berlangganan" class="btn btn-custom" data-paket="PRO12M">Berlangganan</a>
+											</div>
+			
+											<div class="pricing-list">
+												<ul>
+													<li><i style="font-size:18px;color:#555555" class="ion ion-android-checkbox-outline"></i>Up To 12 Mbps</li>
+													<li><i style="font-size:18px;color:#555555" class="ion ion-android-checkbox-outline"></i>Unlimited Data</li>
+													<li><i style="font-size:18px;color:#555555" class="ion ion-android-checkbox-outline"></i>Multi Users</li>
+													<li><i style="font-size:18px;color:#555555" class="ion ion-android-checkbox-outline"></i>Free Support</li>
+													<li><i style="font-size:18px;color:#555555" class="ion ion-android-checkbox-outline"></i>Free modem rental</li>
+												</ul>
+											</div>
+										</div>
+									</div>									
+								</div>
+							</div>
+						</div>
+					</section>
+					<center><button style="width:80px" type="button" class="btn btn-default" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></center>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<div class="modal fade" id="kontak" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+		<div style="max-width:500px" class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div style="background-color:#34495e;color:#ffffff" class="modal-header">
+					<h4 style="text-align:center" class="modal-title" id="myModalLabel">Informasi Kontak</h4>
+				</div>
+				<div style="text-align:justify" class="modal-body">				
+					<h3 style="color:green;">Info Kontak</h3>
+						<p style="width:80%;margin:20px auto" >
+							Jika anda mempunyai pertanyaan, permasalahan seputar login hotspot atau ingin mengetahui informasi lebih lanjut silahkan hubungi kami di nomor kontak dibawah ini :</p>
+						<p style="width:80%;margin:20px auto;font-size:17px;color:#337ab7;" >
+							<i class="ion ion-android-call"></i> Mobile : 0859 7737 0778<br>
+							<i class="ion ion-android-call"></i> Mobile : 0878 5501 8779<br>
+							<i class="ion ion-social-whatsapp-outline"></i> WhatsApp : 0859 7737 0778
+						</p>							
+					<center><button style="width:80px" type="button" class="btn btn-default" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></center>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<div class="modal fade" id="tentang" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+		<div style="max-width:500px" class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div style="background-color:#34495e;color:#ffffff" class="modal-header">
+					<h4 style="text-align:center" class="modal-title" id="myModalLabel">Tentang Starry Net</h4>
+				</div>
+				<div style="text-align:justify" class="modal-body">				
+					<h3 style="color:green;">Tentang</h3>
+						<p style="width:80%;margin:20px auto" >
+							<span style="font-weight:bold;color:blue">Starry Net</span> merupakan sebuah Penyedia Layanan Internet Hotspot Murah Unlimited Data dengan berbagai macam pilihan paket internet dan harga yang terjangkau, beralamatkan di <i>Gg. Mushola At Taubah RT 003 RW 003 Desa Jebed Utara, Kecamatan Taman - Kabupaten Pemalang - Jawa Tengah</i>.</p>
+						<p style="width:80%;margin:20px auto" >
+							<span style="font-weight:bold;color:blue">Starry Net</span> juga menerima berbagai macam Jasa Setting seperti Jasa Setting Jaringan, Jasa Setting MikroTik, Jasa Setting Proxy serta Jasa Setting Warnet Games Online dengan hasil yang terbaik dan bisa dipertanggungjawabkan.
+						</p>
+						
+					<h3 style="color:green;">Keunggulan</h3>
+						<ul style="width:80%;margin:20px auto" >
+							<li>Jaringan Hotspot yang stabil</li>
+							<li>Manajemen Jaringan yang lebih terstruktur</li>
+							<li>Pemisahan Bandwidth Games, Browsing dan Download</li>
+							<li>Paket Data Unlimited atau Tanpa Quota</li>
+							<li>Full Support</li>
+						</ul>									
+					<center><button style="width:80px" type="button" class="btn btn-default" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></center>
+				</div>
+			</div>
+		</div>
+	</div>	
+<div class="modal fade" id="berlangganan" tabindex="-1" role="dialog">
+  <div style="max-width:500px" class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div style="background-color:#34495e;color:#ffffff" class="modal-header">
+        <h4 style="text-align:center" class="modal-title">Form Berlangganan</h4>
+      </div>
+      <div class="modal-body">
+        <form id="formBerlangganan">
+          <input type="hidden" id="paketDipilih" name="paket">
+          <input type="hidden" id="nomorTiket" name="tiket">
+          
+          <div class="form-group">
+            <label>Nama Lengkap</label>
+            <input type="text" class="form-control" id="nama" placeholder="Nama lengkap sesuai KTP" required>
+          </div>
+          
+          <div class="form-group">
+            <label>Alamat Lengkap</label>
+            <input type="text" class="form-control" id="alamat" placeholder="Alamat lengkap sesuai KTP" required>
+          </div>
+          <div class="form-group">
+            <label>Patokan Alamat (Opsional)</label>
+            <input type="text" class="form-control" id="patokan" placeholder="Patokan alamat">
+          </div>          
+          <center><button type="submit" class="btn btn-submit btn-block">Kirim</button></center>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="js/langganan.js"></script>
+</body>
+</html>
