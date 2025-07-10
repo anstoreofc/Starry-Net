@@ -18,7 +18,7 @@
 	const patokan = $('#patokan').val();
 
 
-    const pesan = `*REGISTRASI LANGGANAN BARU*\n\nNomor Tiket : ${tiket}${paket}\nNama Lengkap : ${nama}\nAlamat Lengkap : ${alamat}, ${patokan}\n\n_©2025 Starry Net_. All Rights Reserved.`;
+    const pesan = `*REGISTRASI LANGGANAN BARU*\n\nNomor Tiket : ${tiket}${paket}\nNama Lengkap : ${nama}\nAlamat Lengkap : ${alamat}, ${patokan}\n\n> _©2025 Starry Net_. All Rights Reserved.`;
     const noWa = '6285977370778'; 
     const linkWa = `https://wa.me/${noWa}?text=${encodeURIComponent(pesan)}`;
     
